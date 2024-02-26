@@ -1,0 +1,32 @@
+.reactForm {
+  display: flex;
+  flex-direction: column;
+  /* padding: 60px; */
+  gap: 10px;
+  width: 90%;
+  @media (max-width: 767px) {
+    width: 80%;
+  }
+}
+.upperDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 147px; */
+  /* border: solid; */
+  width: 96%;
+  height: 84vh;
+  margin: 8px;
+  @media (max-width: 767px) {
+    height: 80vh;
+  }
+}
+.textArea {
+  border: none;
+  outline: none;
+  width: 99%;
+  margin: 5px 2px 2px 2px;
+  height: 90%;
+  overflow-y: visible;
+  resize: none;
+}
