@@ -1,54 +1,56 @@
-"use client";
-import React, { useState } from "react";
-import SiteLayout from "@/app/layout";
-import { IconArrowLeft } from "@/assests/Icons";
-import Image from "next/image";
+'use client';
+import React, { useState } from 'react';
+import SiteLayout from '@/app/layout';
+import { IconArrowLeft } from '@/assests/Icons';
+import { IconEbook } from '@/assests/Icons';
+import { IconPodCast } from '@/assests/Icons';
+import Image from 'next/image';
 // import Footer from '@/components/Footer'
 
 function Index() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const images = [
-    "https://media.istockphoto.com/id/1144647692/photo/corporate-group-portrait-of-cheering-staff-members.webp?s=2048x2048&w=is&k=20&c=_k2FZhN5sfRMFE_N1WSNd47jfTASIgDUTafry1kTlAY=",
+    'https://media.istockphoto.com/id/1144647692/photo/corporate-group-portrait-of-cheering-staff-members.webp?s=2048x2048&w=is&k=20&c=_k2FZhN5sfRMFE_N1WSNd47jfTASIgDUTafry1kTlAY=',
     // "https://media.istockphoto.com/id/1144647692/photo/corporate-group-portrait-of-cheering-staff-members.webp?s=2048x2048&w=is&k=20&c=_k2FZhN5sfRMFE_N1WSNd47jfTASIgDUTafry1kTlAY=",
-    "/immmh.jpg"
+    '/immmh.jpg',
     //  "/immmh.jpg"
   ];
   const categoriesImages = [
     {
-      name: "Bhoutik",
-      url: "/image1.png"
+      name: 'Bhoutik',
+      url: '/image1.png',
     },
     {
-      name: "Rohosyo",
-      url: "/image2.png"
+      name: 'Rohosyo',
+      url: '/image2.png',
     },
     {
-      name: "Health",
-      url: "/image3.png"
+      name: 'Health',
+      url: '/image3.png',
     },
     {
-      name: "Romantic",
-      url: "/image1.png"
+      name: 'Romantic',
+      url: '/image1.png',
     },
     {
-      name: "Spiritual",
-      url: "/image2.png"
+      name: 'Spiritual',
+      url: '/image2.png',
     },
     {
-      name: "Others",
-      url: "/image3.png"
-    }
+      name: 'Others',
+      url: '/image3.png',
+    },
   ];
 
   const nextSlide = () => {
     setCurrentSlide((prevSlide) => {
-      console.log("nextSlide===>", console.log(prevSlide));
+      console.log('nextSlide===>', console.log(prevSlide));
       return (prevSlide + 1) % images.length;
     });
   };
 
   const prevSlide = () => {
-    console.log("prevSlide===>", console.log(prevSlide));
+    console.log('prevSlide===>', console.log(prevSlide));
     setCurrentSlide((e) => {
       return (e - 1 + images.length) % images.length;
     });
@@ -63,17 +65,17 @@ function Index() {
             <div class="w-[50%] h-full border-2 border-rose-600 bg-[#b1a4a6] flex justify-center">
               <div class="w-[50%] h-full border-2 mr-10 border-rose-600 "></div>
 
-              <div class="w-[10%] h-full border-2 border-indigo-600">
-                <IconArrowLeft className="w-10 h-10 cursor-pointer" />
+              {/* <div class="w-[10%] h-full border-2 border-indigo-600 flex justify-center">
+                <IconArrowLeft className="w-6 cursor-pointer" />
+              </div> */}
+              <div class="w-[10%] h-full border-2 border-indigo-600 flex justify-center">
+                <IconEbook className="w-6 cursor-pointer" />
               </div>
-              <div class="w-[10%] h-full border-2 border-indigo-600">
-                <IconArrowLeft className="w-10 h-10 cursor-pointer" />
+              <div class="w-[10%] h-full border-2 border-indigo-600 flex justify-center">
+                <IconPodCast className="w-6 cursor-pointer" />
               </div>
-              <div class="w-[10%] h-full border-2 border-indigo-600">
-                <IconArrowLeft className="w-10 h-10 cursor-pointer" />
-              </div>
-              <div class="w-[10%] h-full border-2 border-indigo-600">
-                <IconArrowLeft className="w-10 h-10 cursor-pointer" />
+              <div class="w-[10%] h-full border-2 border-indigo-600 flex justify-center">
+                <IconArrowLeft className="w-6 cursor-pointer" />
               </div>
             </div>
           </div>
