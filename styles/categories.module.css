@@ -1,0 +1,56 @@
+.mainDiv{
+    width: 100%;
+    border: solid;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.categories_divs{
+    width: 310px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 35px;
+    background-color: rgba(255, 255, 255, 0.819);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.aboutDivsContents{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+}
+.aboutDivs{
+    width: 100%;
+    border: solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    border-radius: 35px;
+    background-color: rgb(255 255 255 / 68%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.headerFonts{
+    font-size: 22px;
+    color: white;
+}
+.headerDivFonts{
+    font-size: 17px;
+}
+.headerDivs{
+    width: 90%;
+    margin: 20px 20px 10px 15px;
+    /* border: solid; */
+}
+.headerImageDivs{
+    width: 90%;
+    height: 77%;
+    margin:0px 00px 0px 15px;
+}
