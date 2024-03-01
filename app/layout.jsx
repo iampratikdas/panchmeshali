@@ -13,7 +13,7 @@ const inter = Inter({ subsets: ['latin'] });
 function RootLayout({ children }) {
   return (
     <div>
-      <div class="w-full h-full m-0 p-0 box-border">{children}</div>
+      <div class="w-full h-[auto] m-0 p-0 box-border">{children}</div>
     </div>
   );
 }

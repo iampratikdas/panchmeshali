@@ -7,7 +7,7 @@ function IconStar(props) {
       fill="currentColor"
       height="1em"
       width="1em"
-      {...props}
+      className={props.className} 
     >
       <path d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9 14.5L369.8 316.2l-253.9 36.9c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 00.6 45.3l183.7 179.1-43.4 252.9a31.95 31.95 0 0046.4 33.7L512 754l227.1 119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5 26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9 8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3zM664.8 561.6l36.1 210.3L512 672.7 323.1 772l36.1-210.3-152.8-149L417.6 382 512 190.7 606.4 382l211.2 30.7-152.8 148.9z" />
     </svg>
@@ -21,7 +21,7 @@ function IconPencilTwentyFour(props) {
       fill="currentColor"
       height="1em"
       width="1em"
-      {...props}
+      className={props.className} 
     >
       <path
         fillRule="evenodd"
@@ -38,7 +38,7 @@ function IconSpeedometer2(props) {
       viewBox="0 0 16 16"
       height="1em"
       width="1em"
-      {...props}
+      className={props.className} 
     >
       <path d="M8 4a.5.5 0 01.5.5V6a.5.5 0 01-1 0V4.5A.5.5 0 018 4zM3.732 5.732a.5.5 0 01.707 0l.915.914a.5.5 0 11-.708.708l-.914-.915a.5.5 0 010-.707zM2 10a.5.5 0 01.5-.5h1.586a.5.5 0 010 1H2.5A.5.5 0 012 10zm9.5 0a.5.5 0 01.5-.5h1.5a.5.5 0 010 1H12a.5.5 0 01-.5-.5zm.754-4.246a.389.389 0 00-.527-.02L7.547 9.31a.91.91 0 101.302 1.258l3.434-4.297a.389.389 0 00-.029-.518z" />
       <path
@@ -56,7 +56,7 @@ function IconAward(props) {
       viewBox="0 0 16 16"
       height="1em"
       width="1em"
-      {...props}
+      className={props.className} 
     >
       <path d="M9.669.864L8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68L9.669.864zm1.196 1.193l.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702 1.509.229z" />
       <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z" />
@@ -66,7 +66,7 @@ function IconAward(props) {
 
 function IconNotes(props) {
   return (
-    <svg fill="none" viewBox="0 0 24 24" height="1em" width="1em" {...props}>
+    <svg fill="none" viewBox="0 0 24 24" height="1em" width="1em" className={props.className} >
       <path
         fill="currentColor"
         d="M6 6a1 1 0 011-1h10a1 1 0 110 2H7a1 1 0 01-1-1zM6 10a1 1 0 011-1h10a1 1 0 110 2H7a1 1 0 01-1-1zM7 13a1 1 0 100 2h10a1 1 0 100-2H7zM6 18a1 1 0 011-1h4a1 1 0 110 2H7a1 1 0 01-1-1z"
@@ -84,7 +84,7 @@ function IconNotes(props) {
 function SettingIcons(props) {
   return (
     <svg
-      {...props}
+      className={props.className} 
       xmlns="http://www.w3.org/2000/svg"
       enable-background="new 0 0 1024 1024"
       viewBox="0 0 1024 1024"
@@ -211,7 +211,7 @@ function SettingIcons(props) {
 function ShareIcons(props) {
   return (
     <svg
-      {...props}
+      className={props.className} 
       xmlns="http://www.w3.org/2000/svg"
       data-name="Layer 1"
       viewBox="0 0 24 24"
@@ -227,13 +227,12 @@ function ShareIcons(props) {
 function InfoIcon(props) {
   return (
     <svg
-      {...props}
+      className={props.className} 
       xmlns="http://www.w3.org/2000/svg"
       data-name="Layer 1"
       viewBox="0 0 24 24"
       id="information-sign"
-      width="20"
-      height="20"
+    
     >
       <path d="M12,2A10,10,0,1,0,22,12,10.01114,10.01114,0,0,0,12,2Zm0,18a8,8,0,1,1,8-8A8.00917,8.00917,0,0,1,12,20Zm0-8.5a1,1,0,0,0-1,1v3a1,1,0,0,0,2,0v-3A1,1,0,0,0,12,11.5Zm0-4a1.25,1.25,0,1,0,1.25,1.25A1.25,1.25,0,0,0,12,7.5Z"></path>
     </svg>
@@ -243,7 +242,7 @@ function InfoIcon(props) {
 function HamburgerIcon(props) {
   return (
     <svg
-      {...props}
+      className={props.className} 
       xmlns="http://www.w3.org/2000/svg"
       width="15"
       height="15"
@@ -259,7 +258,7 @@ function HamburgerIcon(props) {
 function HelpIcon(props) {
   return (
     <svg
-      {...props}
+      className={props.className} 
       xmlns="http://www.w3.org/2000/svg"
       width="20"
       height="20"
@@ -274,7 +273,7 @@ function HelpIcon(props) {
 function NotificationIcon(props) {
   return (
     <svg
-      {...props}
+      className={props.className} 
       xmlns="http://www.w3.org/2000/svg"
       width="20"
       height="20"
@@ -293,10 +292,8 @@ function NotificationIcon(props) {
 function LoginIcon(props) {
   return (
     <svg
-      {...props}
+      className={props.className} 
       xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
       viewBox="0 0 512 512"
       id="profile"
     >
@@ -311,10 +308,8 @@ function LoginIcon(props) {
 function SearchIcon(props) {
   return (
     <svg
-      {...props}
+      className={props.className} 
       xmlns="http://www.w3.org/2000/svg"
-      width="15"
-      height="15"
       viewBox="0 0 24 24"
       id="search"
     >
@@ -460,6 +455,9 @@ function IconPodCast(props) {
     </svg>
   );
 }
+
+
+
 
 export {
   IconPodCast,
