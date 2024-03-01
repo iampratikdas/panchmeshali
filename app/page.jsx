@@ -61,7 +61,7 @@ function Index() {
   return (
     <div>
       {/* topNav */}
-      <div class="w-full   border-none fixed  bg-[#A4A5B1] shadow-lg h-[4vw] z-[1]">
+      <div class="w-full   border-none fixed  bg-[#A4A5B1] shadow-lg h-[4vw] z-[3]">
         <div class="w-[80%]  border-none  h-full mr-[10%] ml-[10%] flex flex-row">
           <div class="w-[6%] h-full  border-none  flex justify-center items-center"> Logo</div>
           <div class="w-full h-full  border-none  flex justify-end">
@@ -95,27 +95,28 @@ function Index() {
       <div class="w-full h-[60%] border-2  border-indigo-500 flex justify-center bg-blue-500"></div>
       {/* carousel */}
 
-      <div class="w-full h-[80%] border-2 border-indigo-500">
+      <div class="w-full h-[50%] border-2 border-rose-500 ">
+        {/* hellooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo */}
         {/* <div class="bg-gradient-to-b from-green-400 to-blue-500 w-full h-[20%] relative top-[-10px] backdrop-blur-lg z-[0]"></div> */}
         <div class="bg-blue-500  w-full h-[80%]"></div>
         <div class="bg-gradient-to-t from-green-400 to-blue-500 w-full h-[20%] backdrop-blur-lg z-[0]"></div>
       </div>
 
       {/* categories */}
-      <div>
-        <div class="w-full h-[50%] border-2  border-indigo-500 flex justify-center"> categories</div>
-      </div>
+
+      <div class="w-full h-[50%] border-2  border-rose-500 flex justify-center relative mt-[-436] z-[2]"> categories</div>
+
       {/* categories */}
 
       {/* podcast categories */}
-      <div class="w-full h-[50%] border-2  border-indigo-500 flex justify-center">podcast categories</div>
+      <div class="w-full h-[50%] border-2  border-indigo-500 flex justify-center relative  z-[1]">podcast categories</div>
       {/* podcast categories */}
 
       {/* about categories */}
-      <div class="w-full h-[50%] border-2  border-indigo-500 flex justify-center"></div>
+      <div class="w-full h-[50%] border-2  border-indigo-500 flex justify-center"> about</div>
       {/* about categories */}
       {/* bottom */}
-      <div class="w-full h-[50%] border-2  border-indigo-500 flex justify-center"></div>
+      <div class="w-full h-[50%] border-2  border-indigo-500 flex justify-center">footer</div>
       {/* bottom*/}
     </div>
   );
